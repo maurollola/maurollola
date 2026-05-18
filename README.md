@@ -61,4 +61,5 @@ I am a systems and research engineer dedicated to decoding human physiological s
 ## 📫 Connect with me
 *   💼 **LinkedIn:** [linkedin.com/in/mauro-llorens-la-torre](https://www.linkedin.com/in/mauro-llorens-la-torre)
 *   📍 **Location:** Alicante / Barcelona, Spain
-*   ✉️ **Email:** [Your Email Address]
+*   ✉️ **Email:** maurollorensl@gmail.com
+*   
