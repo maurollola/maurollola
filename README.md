@@ -9,7 +9,7 @@ I am a systems and research engineer dedicated to decoding human physiological s
 
 ### 🩺 **PasiveVital: Contactless mmWave Radar Vital Engine**
 *An advanced 60GHz FMCW MIMO radar processing suite for real-time, contactless extraction of ECG-grade Heart Rate (HR) and Respiration Rate (RR).*
-*   **Clinical Benchmark:** Validated against a medical 3-lead gold-standard reference ECG over a **110-subject clinical trial dataset** (Zenodo ID: 18599983), achieving a **Mean Absolute Error (MAE) of 2.62 BPM** (exceeding clinical acceptability standards of < 3 BPM).
+*   **Clinical Benchmark:** Validated against ECG ground truth on a **3GHz FMCW radar dataset** (2 subjects, 48 recordings across 9 spatial positions — asymmetrical & symmetrical layouts), achieving a **MAE of 2.82 BPM**, **RMSE of 5.37 BPM**, and **Pearson correlation of 0.922**.
 *   **Mathematical Core:** Adaptive MVDR (Minimum Variance Distortionless Response) spatial beamforming, time-domain adaptive Notch harmonic supressor (1x to 8x respiratory harmonics), Complex Phase Unwrapping, and Burg's Maximum Entropy Spectral Estimation.
 *   **Software Quality:** 100% test coverage with Python (`pytest`) mocking real-time hardware bitstreams and multi-channel LVDS desinterleaving.
 *   **Repository:** [maurollola/bio_IA](https://github.com/maurollola/bio_IA) *(Public Portfolio — available once repository visibility is set to public)*
