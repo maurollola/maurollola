@@ -21,7 +21,8 @@ I am a systems and research engineer dedicated to decoding human physiological s
     *   **MAE:** `2.68 BPM` 📉
     *   **Pearson Correlation (r):** `0.978` 📈 *(Outperforms deep learning SOTA like MTTS-CAN NeurIPS [8.87 RMSE] and POS/CHROM baselines).*
 *   **Core Tech:** Kalman-adaptive chrominance signal extraction, Apple vDSP hardware acceleration, and dynamic ambient illumination filtering.
-*   *Note: Due to Intellectual Property (IP) and commercial protection, the source code of the PulseMetrics native iOS application and mathematical core remains in a private repository.*
+*   **Collaboration:** Developed in partnership with the **IRCV Group (Image Recognition and Computer Vision Group)**.
+*   *Note: Due to Intellectual Property (IP) and commercial protection, the source code of the PulseMetrics native iOS application and mathematical core remains in a private repository ([maurollola/RPPG_Project](https://github.com/maurollola/RPPG_Project) / [ircv-group/rPPG-Mauro](https://github.com/ircv-group/rPPG-Mauro)).*
 
 ---
 
@@ -64,6 +65,18 @@ I am a systems and research engineer dedicated to decoding human physiological s
 *   **Architecture:** Hexagonal/Clean Architecture, SOLID Principles, clean separation between domain logic (pure DSP math) and adapters (radar/sensor serial acquisitions).
 *   **Performance:** Python (NumPy, SciPy), Rust-to-Python bindings (`PyO3`), hardware-accelerated processing via Apple Accelerate framework (vDSP).
 *   **Methodology:** Test-Driven Development (TDD) for mission-critical medical code, Git/GitHub CI/CD pipelines.
+
+---
+
+## 📊 Additional Data Science & Database Projects
+
+### 🧠 [SistemaRecomendaciones](https://github.com/maurollola/SistemaRecomendaciones)
+*An intelligent recommendation engine implemented in Jupyter Notebook.*
+*   **Core Concepts:** Collaborative filtering, content-based recommendation systems, and data-driven user personalization.
+
+### ⚽ [BaseDatos-LaLiga-](https://github.com/maurollola/BaseDatos-LaLiga-)
+*A structured database modeling the Spanish Football League (LaLiga) metrics.*
+*   **Core Concepts:** Relational SQL design, query optimization, and sports analytics.
 
 ---
 
