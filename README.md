@@ -1,4 +1,4 @@
-# Hi, I'm Mauro Llorens La Torre 👋
+# Hi, I'm Mauro Llorens Latorre 👋
 
 Systems & research engineer focused on decoding human physiological signals through digital signal processing (DSP), contactless biosensing, and Brain-Computer Interfaces (BCI).
 
