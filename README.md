@@ -1,94 +1,79 @@
 # Hi, I'm Mauro Llorens La Torre 👋
-### Neuroengineer, DSP Architect & Bio-AI Pioneer
 
-I am a systems and research engineer dedicated to decoding human physiological signals. I build clinical-grade algorithms, real-time spatial decoders, and digital signal processing (DSP) pipelines that bridge the gap between human biology and advanced computing. My ultimate mission is to design state-of-the-art contact and contactless biosensing systems that redefine non-invasive clinical care and Brain-Computer Interfaces (BCI).
-
----
-
-## 🧬 Core Bio-Sensing Engines (Scientific Highlights)
-
-### 🩺 **PasiveVital: Contactless mmWave Radar Vital Engine**
-*An advanced 60GHz FMCW MIMO radar processing suite for real-time, contactless extraction of ECG-grade Heart Rate (HR) and Respiration Rate (RR).*
-*   **Clinical Benchmark:** Validated against ECG ground truth on a **3GHz FMCW radar dataset** (2 subjects, 48 recordings across 9 spatial positions — asymmetrical & symmetrical layouts), achieving a **MAE of 2.82 BPM**, **RMSE of 5.37 BPM**, and **Pearson correlation of 0.922**.
-*   **Mathematical Core:** Adaptive MVDR (Minimum Variance Distortionless Response) spatial beamforming, time-domain adaptive Notch harmonic supressor (1x to 8x respiratory harmonics), Complex Phase Unwrapping, and Burg's Maximum Entropy Spectral Estimation.
-*   **Software Quality:** 100% test coverage with Python (`pytest`) mocking real-time hardware bitstreams and multi-channel LVDS desinterleaving.
-*   **Repository:** [maurollola/bio_IA](https://github.com/maurollola/bio_IA) *(Public Portfolio — available once repository visibility is set to public)*
-
-### 📲 **PulseMetrics: Medical-Grade rPPG iOS Engine**
-*A proprietary, hardware-accelerated vital sensing engine utilizing standard mobile front camera feeds to extract cardiac metrics.*
-*   **Clinical Benchmark (UBFC-rPPG Public Dataset):**
-    *   **RMSE:** `3.17 BPM` 📉
-    *   **MAE:** `2.68 BPM` 📉
-    *   **Pearson Correlation (r):** `0.978` 📈 *(Outperforms deep learning SOTA like MTTS-CAN NeurIPS [8.87 RMSE] and POS/CHROM baselines).*
-*   **Core Tech:** Kalman-adaptive chrominance signal extraction, Apple vDSP hardware acceleration, and dynamic ambient illumination filtering.
-*   **Collaboration:** Developed in partnership with the **IRCV Group (Image Recognition and Computer Vision Group)**.
-*   **Clinical Evaluation Showcase:** 📊 [**maurollola/PulseMetrics-Showcase**](https://github.com/maurollola/PulseMetrics-Showcase) — Full benchmark results, Bland-Altman analysis, and SOTA comparison (no source code).
-*   *Note: Due to Intellectual Property (IP) and commercial protection, the source code remains in private repositories ([maurollola/RPPG_Project](https://github.com/maurollola/RPPG_Project) / [ircv-group/rPPG-Mauro](https://github.com/ircv-group/rPPG-Mauro)).*
+Systems & research engineer focused on decoding human physiological signals through digital signal processing (DSP), contactless biosensing, and Brain-Computer Interfaces (BCI).
 
 ---
 
-## 🛠️ Technical Arsenal & Engineering Architecture
+## 🗺️ Repository Guide
 
-```
-                    ┌──────────────────────────────────────────────┐
-                    │          MAURO LLORENS LA TORRE              │
-                    └──────────────────────┬───────────────────────┘
-                                           │
-         ┌─────────────────────────────────┼────────────────────────────────┐
-         ▼                                 ▼                                ▼
- ┌───────────────┐                 ┌───────────────┐                ┌───────────────┐
- │   DSP CORE    │                 │ BCI & DECODING│                │    BIO-AI     │
- └───────┬───────┘                 └───────┬───────┘                 └───────┬───────┘
-         │                                 │                                │
-         ├─ MVDR Spatial Beamforming       ├─ CSP (Common Spatial Patterns) ├─ EEGNet / ShallowFBCNet
-         ├─ Burg Spectral Estimation       ├─ Riemannian Geometry Manifolds ├─ 1D CNNs & Temporal Attention
-         ├─ Wavelet Transform (CWT/VMD)    ├─ LSL Real-Time Synchronization ├─ Contrastive Learning (SSL)
-         └─ Adaptive Clutter Removal       └─ ICA & ASR Artifact Cleaning   └─ Synthetic Data (GANs/Diff)
-```
+### 📡 [bio_IA](https://github.com/maurollola/bio_IA) — PasiveVital: Contactless mmWave Radar Engine
+**Personal project · Built by vocation in my free time**
 
-### 🛰️ Digital Signal Processing (DSP)
-*   **Spatial Array Processing:** MVDR Spatial Beamforming, Delay-and-Sum beam steering, multi-antenna MIMO radar array phase calibration.
-*   **Spectral Estimation & Filtering:** Burg's Maximum Entropy Method, Welch Periodogram, MUSIC (Multiple Signal Classification), Variational Mode Decomposition (VMD), Chebyshev/Butterworth filters.
-*   **Time-Frequency Analysis:** Continuous & Discrete Wavelet Transforms (CWT / DWT) for non-stationary biological signal analysis.
+A 60GHz FMCW MIMO radar processing engine for contactless extraction of Heart Rate (HR) and Respiration Rate (RR). Designed for elderly care and residential monitoring without wearables.
 
-### 🧠 Brain-Computer Interfaces (BCI) & Neuro-Decoding
-*   **Manifold & Geometry Learning:** SOTA Riemannian Geometry classification of spatial covariance matrices directly on the Riemannian manifold (invariance to hardware drift).
-*   **Feature Extraction:** Common Spatial Patterns (CSP), Filter Bank Common Spatial Patterns (FBCSP), Autoregressive modeling of EEG/EMG.
-*   **Signal De-noising:** Independent Component Analysis (ICA) for ocular artifact removal, Artifact Subspace Reconstruction (ASR) for high-amplitude movement rejection.
-*   **Real-time Streaming:** Lab Streaming Layer (LSL) integration for microsecond-precise hardware-software multi-modal sensor synchronization.
+| Metric | Result |
+| :--- | :---: |
+| **MAE** | 2.82 BPM |
+| **RMSE** | 5.37 BPM |
+| **Pearson (r)** | 0.922 |
+| **Dataset** | 3GHz FMCW · 2 subjects · 48 recordings · 9 spatial positions |
 
-### 🤖 Bio-AI & Deep Learning for 1D Signals
-*   **Neural Networks:** 1D Convolutions, Temporal Attention Mechanism, EEGNet, ResNet-1D architectures.
-*   **Self-Supervised Learning (SSL):** Unsupervised pre-training using contrastive learning models optimized for raw physiological time-series data.
-*   **Generative AI:** Synthetic EEG/ECG signal augmentation via GANs and 1D Diffusion models.
-
-### 💻 Systems Engineering & Software Quality
-*   **Architecture:** Hexagonal/Clean Architecture, SOLID Principles, clean separation between domain logic (pure DSP math) and adapters (radar/sensor serial acquisitions).
-*   **Performance:** Python (NumPy, SciPy), Rust-to-Python bindings (`PyO3`), hardware-accelerated processing via Apple Accelerate framework (vDSP).
-*   **Methodology:** Test-Driven Development (TDD) for mission-critical medical code, Git/GitHub CI/CD pipelines.
+**Key achievements:**
+- Achieved clinical-grade accuracy (MAE < 3 BPM) using classical DSP — no deep learning required.
+- 100% test coverage with `pytest`, mocking real-time radar hardware bitstreams.
+- Clean Architecture (Hexagonal) separating pure DSP math from hardware adapters.
 
 ---
 
-## 📊 Additional Data Science & Database Projects
+### 📊 [PulseMetrics-Showcase](https://github.com/maurollola/PulseMetrics-Showcase) — rPPG Clinical Evaluation
+**Biomedical Engineering Internship · Universitat Rovira i Virgili (URV) · IRCV Group · 2026**
 
-### 🧠 [SistemaRecomendaciones](https://github.com/maurollola/SistemaRecomendaciones)
-*An intelligent recommendation engine implemented in Jupyter Notebook.*
-*   **Core Concepts:** Collaborative filtering, content-based recommendation systems, and data-driven user personalization.
+Results-only showcase for PulseMetrics: a proprietary rPPG engine that estimates heart rate from a standard webcam or iPhone front camera, validated on the UBFC-rPPG public clinical dataset.
 
-### ⚽ [BaseDatos-LaLiga-](https://github.com/maurollola/BaseDatos-LaLiga-)
-*A structured database modeling the Spanish Football League (LaLiga) metrics.*
-*   **Core Concepts:** Relational SQL design, query optimization, and sports analytics.
+| Metric | Result |
+| :--- | :---: |
+| **MAE** | 2.68 BPM |
+| **RMSE** | 3.17 BPM |
+| **Pearson (r)** | 0.978 |
+| **Benchmark** | UBFC-rPPG · vs 7 SOTA algorithms including MTTS-CAN (NeurIPS) |
+
+**Key achievements:**
+- Outperforms all tested deep learning and classical baselines (POS, CHROM, GREEN, ICA, MTTS-CAN).
+- Native iOS application in Swift using Apple Accelerate (vDSP) for real-time processing.
+- Full Bland-Altman clinical concordance analysis and per-subject temporal Pearson evaluation.
+- Source code is private due to IP protection. This repo contains only figures, benchmark tables, and scientific validation.
+
+> Developed in collaboration with the **IRCV Group (Image Recognition and Computer Vision)** at URV.
+> Private repositories: [maurollola/RPPG_Project](https://github.com/maurollola/RPPG_Project) / [ircv-group/rPPG-Mauro](https://github.com/ircv-group/rPPG-Mauro)
 
 ---
 
-## 📈 Current Focus & Research Interests
-*   **Low-cost EEG integration:** Decoding motor imagery and visual evoked potentials (SSVEP) using dry electrodes.
-*   **Hybrid Sensing:** Combining radar RF micro-movements and rPPG visual signals to build a redundant, highly-resilient clinical patient monitor.
-*   **Regulatory Compliance:** Designing software following IEC 62304 (Medical Device Software Life Cycle) and ISO 13485 (Medical Quality Management Systems).
+### 🧠 [SistemaRecomendaciones](https://github.com/maurollola/SistemaRecomendaciones) — Recommendation Engine
+**University coursework**
+
+Intelligent recommendation system using collaborative filtering and content-based techniques in Jupyter Notebook.
 
 ---
 
-## 📫 Connect with me
+### ⚽ [BaseDatos-LaLiga-](https://github.com/maurollola/BaseDatos-LaLiga-) — LaLiga Database
+**University coursework**
+
+Relational database design and SQL query optimization modeling Spanish Football League metrics.
+
+---
+
+## 🛠️ Technical Focus Areas
+
+| Domain | Tools & Techniques |
+| :--- | :--- |
+| **DSP** | MVDR Beamforming, Burg Spectral Estimation, Wavelet Transforms, Butterworth/Chebyshev filters |
+| **BCI** | Common Spatial Patterns (CSP), Riemannian Geometry, ICA artifact removal, Lab Streaming Layer (LSL) |
+| **Bio-AI** | EEGNet, 1D CNNs, Temporal Attention, contrastive self-supervised learning |
+| **Engineering** | Hexagonal Architecture, SOLID, TDD, Python (NumPy/SciPy), Swift (vDSP), Rust (PyO3) |
+
+---
+
+## 📫 Contact
 
 *   💼 **LinkedIn:** [linkedin.com/in/mauro-llorens-10a67628a](https://www.linkedin.com/in/mauro-llorens-10a67628a/)
 *   📍 **Location:** Alicante / Barcelona, Spain
