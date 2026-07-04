@@ -12,7 +12,7 @@ I am a systems and research engineer dedicated to decoding human physiological s
 *   **Clinical Benchmark:** Validated against a medical 3-lead gold-standard reference ECG over a **110-subject clinical trial dataset** (Zenodo ID: 18599983), achieving a **Mean Absolute Error (MAE) of 2.62 BPM** (exceeding clinical acceptability standards of < 3 BPM).
 *   **Mathematical Core:** Adaptive MVDR (Minimum Variance Distortionless Response) spatial beamforming, time-domain adaptive Notch harmonic supressor (1x to 8x respiratory harmonics), Complex Phase Unwrapping, and Burg's Maximum Entropy Spectral Estimation.
 *   **Software Quality:** 100% test coverage with Python (`pytest`) mocking real-time hardware bitstreams and multi-channel LVDS desinterleaving.
-*   **Repository:** [maurollola/bio_IA](https://github.com/maurollola/bio_IA) (Public Portfolio Showcase)
+*   **Repository:** [maurollola/bio_IA](https://github.com/maurollola/bio_IA) *(Public Portfolio — available once repository visibility is set to public)*
 
 ### 📲 **PulseMetrics: Medical-Grade rPPG iOS Engine**
 *A proprietary, hardware-accelerated vital sensing engine utilizing standard mobile front camera feeds to extract cardiac metrics.*
@@ -22,7 +22,8 @@ I am a systems and research engineer dedicated to decoding human physiological s
     *   **Pearson Correlation (r):** `0.978` 📈 *(Outperforms deep learning SOTA like MTTS-CAN NeurIPS [8.87 RMSE] and POS/CHROM baselines).*
 *   **Core Tech:** Kalman-adaptive chrominance signal extraction, Apple vDSP hardware acceleration, and dynamic ambient illumination filtering.
 *   **Collaboration:** Developed in partnership with the **IRCV Group (Image Recognition and Computer Vision Group)**.
-*   *Note: Due to Intellectual Property (IP) and commercial protection, the source code of the PulseMetrics native iOS application and mathematical core remains in a private repository ([maurollola/RPPG_Project](https://github.com/maurollola/RPPG_Project) / [ircv-group/rPPG-Mauro](https://github.com/ircv-group/rPPG-Mauro)).*
+*   **Clinical Evaluation Showcase:** 📊 [**maurollola/PulseMetrics-Showcase**](https://github.com/maurollola/PulseMetrics-Showcase) — Full benchmark results, Bland-Altman analysis, and SOTA comparison (no source code).
+*   *Note: Due to Intellectual Property (IP) and commercial protection, the source code remains in private repositories ([maurollola/RPPG_Project](https://github.com/maurollola/RPPG_Project) / [ircv-group/rPPG-Mauro](https://github.com/ircv-group/rPPG-Mauro)).*
 
 ---
 
